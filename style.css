@@ -1,0 +1,888 @@
+/* ==========================================
+NIAZI AMBULANCE SERVICE
+STYLE.CSS
+========================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f7f9fc;
+
+color:#222;
+
+line-height:1.7;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+/* ======================
+HEADER
+====================== */
+
+header{
+
+background:#ffffff;
+
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+}
+
+.logo h2{
+
+color:#d60000;
+
+font-size:30px;
+
+font-weight:700;
+
+}
+
+.logo p{
+
+font-size:14px;
+
+color:#666;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:30px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+
+color:#222;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#d60000;
+
+}
+
+.call-btn{
+
+background:#d60000;
+
+color:#fff;
+
+padding:12px 22px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.call-btn:hover{
+
+background:#a60000;
+
+}
+
+/* ======================
+HERO
+====================== */
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:80px 0;
+
+gap:60px;
+
+}
+
+.hero-left{
+
+flex:1;
+
+}
+
+.hero-left h1{
+
+font-size:54px;
+
+font-weight:700;
+
+color:#111;
+
+margin-bottom:20px;
+
+line-height:1.2;
+
+}
+
+.hero-left p{
+
+font-size:20px;
+
+color:#555;
+
+margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.red{
+
+background:#d60000;
+
+color:#fff;
+
+}
+
+.green{
+
+background:#16a34a;
+
+color:#fff;
+
+}
+
+.blue{
+
+background:#0077ff;
+
+color:#fff;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.hero-info{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.hero-info div{
+
+background:#fff;
+
+padding:20px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-info h3{
+
+font-size:26px;
+
+color:#d60000;
+
+margin-bottom:8px;
+
+}
+
+.hero-right{
+
+flex:1;
+
+text-align:center;
+
+}
+
+.hero-right img{
+
+width:100%;
+
+max-width:520px;
+
+border-radius:18px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+margin-bottom:20px;
+
+}/* ===========================
+SECTION TITLE
+=========================== */
+
+.section-title{
+
+text-align:center;
+
+font-size:42px;
+
+font-weight:700;
+
+color:#d60000;
+
+margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:50px;
+
+}
+
+/* ===========================
+SERVICES
+=========================== */
+
+.services{
+
+padding:90px 0;
+
+background:#ffffff;
+
+}
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+border-top:5px solid #d60000;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.service-card .icon{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+color:#d60000;
+
+}
+
+.service-card p{
+
+font-size:16px;
+
+color:#666;
+
+}
+
+/* ===========================
+WHY CHOOSE US
+=========================== */
+
+.why-us{
+
+padding:90px 0;
+
+background:#f4f7fb;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.why-card h3{
+
+font-size:22px;
+
+color:#d60000;
+
+margin-bottom:15px;
+
+}
+
+.why-card p{
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/* ===========================
+OUR FLEET
+=========================== */
+
+.fleet{
+
+padding:90px 0;
+
+background:#fff;
+
+}
+
+.fleet-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:35px;
+
+}
+
+.fleet-card{
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+transition:.3s;
+
+}
+
+.fleet-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.fleet-card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.fleet-card h3{
+
+font-size:26px;
+
+color:#d60000;
+
+padding:20px 25px 10px;
+
+}
+
+.fleet-card p{
+
+padding:0 25px 25px;
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/* ===========================
+GALLERY
+=========================== */
+
+.gallery{
+
+padding:90px 0;
+
+background:#f4f7fb;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.10);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}/* ===========================
+EMERGENCY BANNER
+=========================== */
+
+.emergency-banner{
+
+background:linear-gradient(135deg,#d60000,#ff2b2b);
+
+padding:80px 20px;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.emergency-banner h2{
+
+font-size:44px;
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+.emergency-banner p{
+
+font-size:20px;
+
+margin-bottom:30px;
+
+opacity:.95;
+
+}
+
+.emergency-banner .btn{
+
+margin:10px;
+
+}
+
+/* ===========================
+CONTACT
+=========================== */
+
+.contact{
+
+padding:90px 0;
+
+background:#ffffff;
+
+}
+
+.contact-box{
+
+max-width:700px;
+
+margin:auto;
+
+background:#fff;
+
+padding:45px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+.contact-box h3{
+
+font-size:34px;
+
+color:#d60000;
+
+margin-bottom:25px;
+
+}
+
+.contact-box p{
+
+font-size:18px;
+
+margin:15px 0;
+
+color:#555;
+
+line-height:1.8;
+
+}
+
+.contact-box .btn{
+
+margin-top:25px;
+
+display:inline-block;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+background:#111;
+
+color:#fff;
+
+text-align:center;
+
+padding:50px 20px;
+
+}
+
+footer h2{
+
+font-size:32px;
+
+margin-bottom:15px;
+
+color:#fff;
+
+}
+
+footer p{
+
+color:#ccc;
+
+margin:8px 0;
+
+font-size:16px;
+
+}
+
+/* ===========================
+RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:992px){
+
+header .container{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:60px 0;
+
+}
+
+.hero-left h1{
+
+font-size:42px;
+
+}
+
+.hero-info{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.hero-right img{
+
+max-width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.section-title{
+
+font-size:32px;
+
+}
+
+.hero-left h1{
+
+font-size:34px;
+
+}
+
+.hero-left p{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-info{
+
+grid-template-columns:1fr;
+
+}
+
+.service-grid,
+
+.why-grid,
+
+.fleet-grid,
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.call-btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.contact-box{
+
+padding:30px 20px;
+
+}
+
+.contact-box h3{
+
+font-size:28px;
+
+}
+
+.emergency-banner h2{
+
+font-size:32px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.hero-left h1{
+
+font-size:28px;
+
+}
+
+.hero-left p{
+
+font-size:16px;
+
+}
+
+.section-title{
+
+font-size:28px;
+
+}
+
+}
