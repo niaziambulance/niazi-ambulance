@@ -1025,24 +1025,32 @@ font-size:28px;
   line-height: 1.8;
   color: #555;
 }
-/* FORCE TEST - TOP PANEL */
+/* Emergency Panel Color Fix */
 .quick-emergency {
-    background: red !important;
-    padding: 30px !important;
+    background: #f5f7fa !important;
 }
 
 .quick-emergency-card {
-    background: yellow !important;
-    border: 5px solid blue !important;
-    padding: 25px !important;
+    background: #ffffff !important;
+    border: none !important;
 }
 
-.quick-action {
-    display: flex !important;
-    background: black !important;
-    color: white !important;
-    padding: 20px !important;
-    margin: 15px 0 !important;
-    text-decoration: none !important;
-    border-radius: 15px !important;
+.quick-emergency-card h2 {
+    color: #d60000 !important;
+}
+
+.quick-action.quick-call {
+    background: #e00000 !important;
+}
+
+.quick-action.quick-whatsapp {
+    background: #16a34a !important;
+}
+.quick-action.quick-directions {
+    background: #1683f3 !important;
+}
+
+.quick-social a {
+    background: #222 !important;
+    color: #fff !important;
 }
