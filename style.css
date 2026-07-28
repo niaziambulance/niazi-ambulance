@@ -1025,32 +1025,3 @@ font-size:28px;
   line-height: 1.8;
   color: #555;
 }
-/* Emergency Panel Color Fix */
-.quick-emergency {
-    background: #f5f7fa !important;
-}
-
-.quick-emergency-card {
-    background: #ffffff !important;
-    border: none !important;
-}
-
-.quick-emergency-card h2 {
-    color: #d60000 !important;
-}
-
-.quick-action.quick-call {
-    background: #e00000 !important;
-}
-
-.quick-action.quick-whatsapp {
-    background: #16a34a !important;
-}
-.quick-action.quick-directions {
-    background: #1683f3 !important;
-}
-
-.quick-social a {
-    background: #222 !important;
-    color: #fff !important;
-}
