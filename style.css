@@ -1426,3 +1426,39 @@ font-size:28px;
         gap: 10px 16px;
     }
 }
+/* ===== 6 PHOTO GALLERY FINAL DESIGN ===== */
+
+.Gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.Gallery-grid img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .Gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .Gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .Gallery-grid img {
+        border-radius: 8px;
+    }
+}
