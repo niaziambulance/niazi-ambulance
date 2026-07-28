@@ -1241,3 +1241,86 @@ font-size:28px;
     min-height: 78px !important;
   }
   }
+/* ===== HERO MAIN TEXT DESIGN ===== */
+
+.hero-left {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.hero-main-title {
+    margin: 0 0 22px;
+    text-align: center;
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.hero-main-title span {
+    display: block;
+}
+
+.hero-247 {
+    font-size: 42px;
+    color: #d60000;
+}
+
+.hero-emergency {
+    font-size: 34px;
+    color: #111;
+}
+
+.hero-ambulance {
+    font-size: 31px;
+    color: #111;
+}
+
+.hero-pakistan {
+    font-size: 29px;
+    color: #d60000;
+    margin-top: 5px;
+}
+
+.hero-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+    max-width: 650px;
+    margin: 0 auto 18px;
+    text-align: center;
+}
+
+.hero-services-line {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 650px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero-247 {
+        font-size: 38px;
+    }
+
+    .hero-emergency {
+        font-size: 31px;
+    }
+
+    .hero-ambulance {
+        font-size: 27px;
+    }
+
+    .hero-pakistan {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .hero-services-line {
+        font-size: 16px;
+    }
+}
