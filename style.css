@@ -1025,3 +1025,27 @@ font-size:28px;
   line-height: 1.8;
   color: #555;
 }
+/* ===== FOLLOW US - CARD DESIGN ===== */
+
+.quick-social {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px !important;
+  margin: 55px 0 25px !important;
+  position: relative !important;
+  padding-top: 30px !important;
+  overflow: visible !important;
+}
+
+/* FOLLOW US heading */
+.quick-social::before {
+  content: "FOLLOW US";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 15px;
+  color: #222;
+  font-size: 15px;
+  font-weight: 700
