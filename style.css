@@ -994,4 +994,34 @@ font-size:28px;
   background: #16a34a;
 }
 
-.quick-dire
+.quick-directions {
+  background: #1683f3;
+}
+
+.quick-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.22);
+}
+
+.quick-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 22px 0;
+}
+
+.quick-social a {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.quick-info {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #555;
+}
