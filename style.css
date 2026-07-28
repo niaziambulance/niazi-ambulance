@@ -1324,3 +1324,105 @@ font-size:28px;
         font-size: 16px;
     }
 }
+/* ===== 24/7 EMERGENCY HERO DESIGN ===== */
+
+.emergency-hero-text {
+    text-align: center;
+    padding: 35px 15px 25px;
+    background: #f7f9fc;
+}
+
+.big-247 {
+    font-size: 90px;
+    line-height: 0.95;
+    font-weight: 900;
+    color: #e00000;
+    letter-spacing: -3px;
+}
+
+.big-emergency {
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 900;
+    color: #071a30;
+    margin-top: 15px;
+}
+
+.big-ambulance {
+    font-size: 43px;
+    line-height: 1.05;
+    font-weight: 900;
+    color: #e00000;
+    margin-top: 8px;
+}
+
+.pakistan-strip {
+    display: inline-block;
+    background: #071a30;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 7px;
+    padding: 8px 35px;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+.emergency-description {
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #222;
+    margin: 10px auto 22px;
+}
+
+.emergency-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.emergency-services span {
+    display: inline-block;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 600px) {
+
+    .emergency-hero-text {
+        padding: 28px 10px 22px;
+    }
+
+    .big-247 {
+        font-size: 72px;
+    }
+
+    .big-emergency {
+        font-size: 39px;
+    }
+
+    .big-ambulance {
+        font-size: 31px;
+    }
+
+    .pakistan-strip {
+        font-size: 17px;
+        letter-spacing: 4px;
+        padding: 7px 25px;
+    }
+
+    .emergency-description {
+        font-size: 17px;
+    }
+
+    .emergency-services {
+        font-size: 15px;
+        gap: 10px 16px;
+    }
+}
