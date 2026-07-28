@@ -915,32 +915,83 @@ font-size:28px;
   transform: translateY(-3px);
   opacity: 0.88;
 } 
-/* Premium Action Buttons */
-.hero-buttons .btn,
-.contact-box .btn {
-  display: inline-flex;
+/* =================================
+   TOP EMERGENCY CONTACT PANEL
+================================= */
+
+.quick-emergency {
+  background: #f5f7fa;
+  padding: 25px 15px;
+}
+
+.quick-emergency-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 28px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.quick-emergency-card h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  color: #d60000;
+  font-weight: 800;
+}
+
+.quick-subtitle {
+  margin: 0 0 22px;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Main emergency buttons */
+
+.quick-action {
+  width: 100%;
+  min-height: 68px;
+  box-sizing: border-box;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  min-width: 180px;
-  min-height: 54px;
-  padding: 15px 25px;
-  margin: 7px;
+  gap: 15px;
+  padding: 13px 20px;
+  margin: 12px 0;
   border-radius: 14px;
-  font-size: 17px;
-  font-weight: 700;
+  color: #ffffff;
   text-decoration: none;
-  letter-spacing: 0.3px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.20);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: left;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.16);
 }
 
-.hero-buttons .btn:hover,
-.contact-box .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 9px 22px rgba(0,0,0,0.28);
+.quick-action > span {
+  font-size: 27px;
 }
 
-.hero-buttons .btn:active,
-.contact-box .btn:active {
-  transform: scale(0.97);
+.quick-action div {
+  display: flex;
+  flex-direction: column;
 }
+
+.quick-action strong {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.quick-action small {
+  margin-top: 3px;
+  font-size: 13px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.quick-call {
+  background: #e00000;
+}
+
+.quick-whatsapp {
+  background: #16a34a;
+}
+
+.quick-dire
