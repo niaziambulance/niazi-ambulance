@@ -1462,3 +1462,32 @@ font-size:28px;
         border-radius: 8px;
     }
 }
+/* ===== EMERGENCY BANNER IMAGE ===== */
+
+.hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emergency-banner {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 20px auto;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .emergency-banner {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px auto;
+        border-radius: 8px;
+    }
+}
