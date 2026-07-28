@@ -1135,3 +1135,109 @@ font-size:28px;
 .quick-info strong {
   color: #222 !important;
 }
+/* ===== FINAL EMERGENCY PANEL POLISH ===== */
+
+/* Social cards */
+.quick-social {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px !important;
+  margin: 55px 0 22px !important;
+  position: relative !important;
+  padding-top: 28px !important;
+}
+
+.quick-social::before {
+  content: "FOLLOW US";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #222;
+  background: #fff;
+  padding: 0 12px;
+}
+
+.quick-social a {
+  background: #fff !important;
+  color: #222 !important;
+  min-height: 82px !important;
+  padding: 12px 5px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+}
+
+.quick-social a i {
+  font-size: 30px !important;
+}
+
+.quick-social a span {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.social-instagram i {
+  color: #e1306c !important;
+}
+
+.social-facebook i {
+  color: #1877f2 !important;
+}
+
+.social-tiktok i {
+  color: #000 !important;
+}
+
+/* Information box */
+.quick-info {
+  margin-top: 18px !important;
+  background: #fff !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.10) !important;
+  text-align: left !important;
+}
+
+.quick-info p {
+  margin: 0 !important;
+  padding: 13px 14px !important;
+  min-height: 46px !important;
+  display: flex !important;
+  align-items: center !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  color: #222 !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.quick-info p:last-child {
+  border-bottom: none !important;
+}
+
+.quick-info p strong {
+  font-weight: 700 !important;
+}
+
+/* Mobile polish */
+@media (max-width: 600px) {
+  .quick-emergency-card {
+    width: calc(100% - 30px) !important;
+    max-width: 430px !important;
+  }
+
+  .quick-social {
+    gap: 9px !important;
+  }
+
+  .quick-social a {
+    min-height: 78px !important;
+  }
+  }
