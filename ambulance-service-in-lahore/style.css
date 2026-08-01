@@ -1396,4 +1396,77 @@ font-size:22px;
 /* ===================================================== */
 /* CSS PART 6 END */
 /* ===================================================== */
-  
+  /* ========================= */
+/* BUG FIX PACK 1 */
+/* ========================= */
+
+header.sticky{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+animation:headerDown .35s ease;
+}
+
+@keyframes headerDown{
+from{
+transform:translateY(-100%);
+}
+to{
+transform:translateY(0);
+}
+}
+
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:.7s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.pulse{
+animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.12);
+}
+100%{
+transform:scale(1);
+}
+}
+
+.back-to-top{
+position:fixed;
+left:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#c40000;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+opacity:0;
+visibility:hidden;
+transition:.3s;
+z-index:9999;
+}
+
+.back-to-top.show-top{
+opacity:1;
+visibility:visible;
+}
+
+.back-to-top:hover{
+background:#0b8f3d;
+}
