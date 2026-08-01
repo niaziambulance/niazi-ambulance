@@ -1,1 +1,129 @@
+/* ==========================================
+   HERO BUTTONS
+========================================== */
 
+.hero-buttons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:18px;
+flex-wrap:wrap;
+margin:35px 0;
+}
+
+.hero-buttons a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 28px;
+border-radius:50px;
+text-decoration:none;
+font-size:17px;
+font-weight:700;
+transition:.3s ease;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.call-btn{
+background:#d90429;
+color:#fff;
+}
+
+.call-btn:hover{
+background:#b10320;
+transform:translateY(-4px);
+}
+
+.map-btn{
+background:#0d6efd;
+color:#fff;
+}
+
+.map-btn:hover{
+background:#0b5ed7;
+transform:translateY(-4px);
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:#fff;
+}
+
+.whatsapp-btn:hover{
+background:#1faa52;
+transform:translateY(-4px);
+}
+
+
+/* ==========================================
+   HERO POSTER
+========================================== */
+
+.hero-image{
+display:block;
+width:100%;
+max-width:950px;
+margin:35px auto;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
+
+
+/* ==========================================
+   TRUST BAR
+========================================== */
+
+.trust-bar{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:40px;
+}
+
+.trust-bar div{
+background:#fff;
+padding:20px;
+border-radius:16px;
+text-align:center;
+font-weight:700;
+font-size:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.trust-bar div:hover{
+transform:translateY(-6px);
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.hero-buttons a{
+width:100%;
+}
+
+.trust-bar{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.trust-bar{
+grid-template-columns:1fr;
+}
+
+.hero-image{
+border-radius:14px;
+}
+
+}
