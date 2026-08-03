@@ -1,3 +1,8 @@
 https://niaziambulance.github.io/niazi-ambulance/
 https://niaziambulance.github.io/niazi-ambulance/ambulance-service-in-mianwali/
 https://niaziambulance.github.io/niazi-ambulance/ambulance-service-in-islamabad/
+<url>
+  <loc>https://niaziambulance.github.io/niazi-ambulance/ambulance-service-in-lahore/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
