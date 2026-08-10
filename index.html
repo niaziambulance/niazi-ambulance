@@ -605,7 +605,387 @@ Serving Mianwali & All Pakistan
 </footer>
 
 <script src="script.js"></script>
+<!-- =====================================================
+     NIAZI AMBULANCE - PREMIUM FLOATING CTA
+     ===================================================== -->
 
+<style>
+/* ---------- PREMIUM FLOATING CTA ---------- */
+
+.niazi-premium-cta {
+    position: fixed;
+    right: 22px;
+    bottom: 28px;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main button */
+.niazi-premium-btn {
+    position: relative;
+    min-width: 205px;
+    height: 58px;
+    padding: 0 18px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.18),
+        0 2px 5px rgba(0,0,0,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Hover */
+.niazi-premium-btn:hover {
+    transform: translateX(-5px);
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.25),
+        0 3px 8px rgba(0,0,0,.10);
+}
+
+/* Call */
+.niazi-call-premium {
+    background: linear-gradient(135deg, #e52525, #c91414);
+}
+
+/* WhatsApp */
+.niazi-whatsapp-premium {
+    background: linear-gradient(135deg, #20c765, #0ca84c);
+}
+
+/* Icon circle */
+.niazi-premium-icon {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SVG */
+.niazi-premium-icon svg {
+    width: 21px;
+    height: 21px;
+    fill: #fff;
+}
+
+/* Text */
+.niazi-premium-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.niazi-premium-title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: .2px;
+}
+
+.niazi-premium-number {
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: .9;
+}
+
+/* Small emergency badge */
+.niazi-emergency-dot {
+    position: absolute;
+    top: -5px;
+    right: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: #fff;
+    color: #d71920;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+
+/* ---------- SUBTLE CALL PULSE ---------- */
+
+.niazi-call-premium .niazi-premium-icon {
+    animation: niaziPulse 2.2s infinite;
+}
+
+@keyframes niaziPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,255,255,.35);
+    }
+    60% {
+        box-shadow: 0 0 0 9px rgba(255,255,255,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
+
+
+/* =====================================================
+   MOBILE PREMIUM BOTTOM BAR
+   ===================================================== */
+
+.niazi-mobile-premium {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Hide desktop buttons */
+    .niazi-premium-cta {
+        display: none;
+    }
+
+    /* Bottom bar */
+    .niazi-mobile-premium {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        height: 66px;
+        z-index: 999999;
+
+        display: flex;
+        overflow: hidden;
+
+        border-radius: 17px;
+
+        box-shadow:
+            0 8px 30px rgba(0,0,0,.28),
+            0 2px 8px rgba(0,0,0,.12);
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Mobile buttons */
+    .niazi-mobile-premium-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        color: #fff;
+        text-decoration: none;
+
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .1px;
+
+        transition: filter .2s ease;
+    }
+
+    .niazi-mobile-premium-btn:active {
+        filter: brightness(.88);
+    }
+
+    .niazi-mobile-call {
+        background: linear-gradient(135deg, #e52525, #c91414);
+    }
+
+    .niazi-mobile-whatsapp {
+        background: linear-gradient(135deg, #20c765, #0ca84c);
+    }
+
+    .niazi-mobile-premium-btn svg {
+        width: 22px;
+        height: 22px;
+        fill: #fff;
+    }
+
+    /* Divider */
+    .niazi-mobile-divider {
+        width: 1px;
+        background: rgba(255,255,255,.3);
+    }
+
+    /* Prevent website content being hidden */
+    body {
+        padding-bottom: 88px;
+    }
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 380px) {
+
+    .niazi-mobile-premium {
+        height: 62px;
+        left: 7px;
+        right: 7px;
+        bottom: 7px;
+    }
+
+    .niazi-mobile-premium-btn {
+        font-size: 10px;
+        gap: 6px;
+    }
+
+    .niazi-mobile-premium-btn svg {
+        width: 19px;
+        height: 19px;
+    }
+}
+</style>
+
+
+<!-- =====================================================
+     DESKTOP CTA
+     ===================================================== -->
+
+<div class="niazi-premium-cta">
+
+    <!-- CALL AMBULANCE -->
+    <a
+        href="tel:+923059129038"
+        class="niazi-premium-btn niazi-call-premium"
+        aria-label="Call Niazi Ambulance Now"
+    >
+
+        <span class="niazi-emergency-dot">
+            24/7 EMERGENCY
+        </span>
+
+        <span class="niazi-premium-icon">
+
+            <svg viewBox="0 0 24 24">
+                <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24
+                1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0
+                .55-.45 1-1 1C10.61 21 3 13.39 3 4
+                c0-.55.45-1 1-1h3.5c.55 0 1 .45
+                1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25
+                1.02l-2.2 2.2z"/>
+            </svg>
+
+        </span>
+
+        <span class="niazi-premium-text">
+            <span class="niazi-premium-title">
+                CALL AMBULANCE NOW
+            </span>
+
+            <span class="niazi-premium-number">
+                0305-9129038 • Available 24/7
+            </span>
+        </span>
+
+    </a>
+
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/923059129038?text=Assalam-o-Alaikum%2C%20mujhe%20ambulance%20book%20karni%20hai."
+        class="niazi-premium-btn niazi-whatsapp-premium"
+        target="_blank"
+        rel="noopener"
+        aria-label="Book Ambulance on WhatsApp"
+    >
+
+        <span class="niazi-premium-icon">
+
+            <svg viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.8 11.8 0 0012.04 0C5.52
+                0 .22 5.3 .22 11.82c0 2.08.54 4.11
+                1.57 5.9L.1 24l6.42-1.68a11.8 11.8 0 005.52
+                1.37h.01c6.52 0 11.82-5.3 11.82-11.82
+                0-3.16-1.23-6.13-3.35-8.39z
+                M12.05 21.7h-.01a9.85 9.85 0 01-5.02-1.37l-.36-.21-3.81
+                1 1.02-3.72-.23-.38a9.83 9.83 0 01-1.51-5.2
+                C2.13 6.39 6.58 1.94 12.05 1.94c2.64
+                0 5.12 1.03 6.99 2.9a9.81 9.81 0 012.9
+                6.98c0 5.47-4.45 9.92-9.89 9.92z"/>
+            </svg>
+
+        </span>
+
+        <span class="niazi-premium-text">
+            <span class="niazi-premium-title">
+                BOOK ON WHATSAPP
+            </span>
+
+            <span class="niazi-premium-number">
+                Chat with us • Quick Booking
+            </span>
+        </span>
+
+    </a>
+
+</div>
+
+
+<!-- =====================================================
+     MOBILE STICKY CTA
+     ===================================================== -->
+
+<div class="niazi-mobile-premium">
+
+    <!-- CALL -->
+    <a
+        href="tel:+923059129038"
+        class="niazi-mobile-premium-btn niazi-mobile-call"
+    >
+
+        <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24
+            1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0
+            .55-.45 1-1 1C10.61 21 3 13.39 3 4
+            c0-.55.45-1 1-1h3.5c.55 0 1 .45
+            1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25
+            1.02l-2.2 2.2z"/>
+        </svg>
+
+        CALL AMBULANCE NOW
+
+    </a>
+
+
+    <span class="niazi-mobile-divider"></span>
+
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/923059129038?text=Assalam-o-Alaikum%2C%20mujhe%20ambulance%20book%20karni%20hai."
+        class="niazi-mobile-premium-btn niazi-mobile-whatsapp"
+        target="_blank"
+        rel="noopener"
+    >
+
+        <svg viewBox="0 0 24 24">
+            <path d="M20.52 3.48A11.8 11.8 0 0012.04 0C5.52
+            0 .22 5.3 .22 11.82c0 2.08.54 4.11
+            1.57 5.9L.1 24l6.42-1.68a11.8 11.8 0 005.52
+            1.37h.01c6.52 0 11.82-5.3 11.82-11.82
+            0-3.16-1.23-6.13-3.35-8.39z
+            M12.05 21.7h-.01a9.85 9.85 0 01-5.02-1.37l-.36-.21-3.81
+            1 1.02-3.72-.23-.38a9.83 9.83 0 01-1.51-5.2
+            C2.13 6.39 6.58 1.94 12.05 1.94c2.64
+            0 5.12 1.03 6.99 2.9a9.81 9.81 0 012.9
+            6.98c0 5.47-4.45 9.92-9.89 9.92z"/>
+        </svg>
+
+        BOOK ON WHATSAPP
+
+    </a>
+
+</div>
 </body>
 
 </html>
