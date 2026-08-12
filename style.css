@@ -1683,8 +1683,7 @@ font-size:28px;
     position: relative;
     min-height: 620px;
 
-    background-image:
-        url("ambulance-hero.png");
+    background-image: url("./ambulance-hero.png");
 
     background-size: cover;
     background-position: center right;
