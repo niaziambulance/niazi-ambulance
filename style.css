@@ -2166,3 +2166,168 @@ font-size:28px;
         font-size: 13px !important;
     }
 }
+/* =========================================
+   FINAL MOBILE HEADER FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        position: relative !important;
+        height: 72px !important;
+        min-height: 72px !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        z-index: 100000 !important;
+    }
+
+    header > .container {
+        position: relative !important;
+
+        width: 100% !important;
+        height: 72px !important;
+        min-height: 72px !important;
+
+        padding: 8px 14px !important;
+
+        box-sizing: border-box !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+
+    /* Logo */
+
+    header .logo {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        flex: 1 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+        min-width: 0 !important;
+    }
+
+    header .logo h2 {
+        margin: 0 !important;
+
+        font-size: 18px !important;
+        line-height: 1.05 !important;
+
+        white-space: nowrap !important;
+    }
+
+    header .logo p {
+        margin: 3px 0 0 !important;
+
+        font-size: 9px !important;
+        line-height: 1 !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* Remove empty space created by outer nav */
+
+    header > nav {
+        display: contents !important;
+    }
+
+
+    /* Hamburger */
+
+    .niazi-menu-btn {
+        position: absolute !important;
+
+        top: 15px !important;
+        right: 14px !important;
+
+        width: 42px !important;
+        height: 42px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: #071b33 !important;
+
+        color: #ffffff !important;
+
+        border: none !important;
+        border-radius: 11px !important;
+
+        font-size: 23px !important;
+        line-height: 1 !important;
+
+        box-shadow: 0 5px 16px rgba(0,0,0,.18) !important;
+
+        z-index: 100002 !important;
+    }
+
+
+    /* Navigation dropdown */
+
+    #niazi-navigation {
+        position: absolute !important;
+
+        top: 68px !important;
+        left: 12px !important;
+        right: 12px !important;
+
+        width: auto !important;
+
+        margin: 0 !important;
+
+        background: #ffffff !important;
+
+        border-radius: 14px !important;
+
+        box-shadow: 0 15px 35px rgba(0,0,0,.20) !important;
+
+        border: 1px solid #eeeeee !important;
+
+        z-index: 100001 !important;
+    }
+
+    #niazi-navigation ul {
+        margin: 0 !important;
+        padding: 5px 0 !important;
+    }
+
+    #niazi-navigation li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #niazi-navigation li a {
+        display: block !important;
+
+        padding: 13px 18px !important;
+
+        font-size: 15px !important;
+        font-weight: 700 !important;
+
+        text-align: left !important;
+
+        border-bottom: 1px solid #eeeeee !important;
+    }
+
+    #niazi-navigation li:last-child a {
+        border-bottom: none !important;
+    }
+
+
+    /* Hero starts immediately after header */
+
+    .niazi-premium-hero {
+        margin-top: 0 !important;
+    }
+}
