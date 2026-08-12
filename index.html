@@ -996,6 +996,28 @@ Serving Mianwali & All Pakistan
     </a>
 
 </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton = document.querySelector(".niazi-menu-btn");
+    const menu = document.getElementById("niazi-navigation");
+
+    if (!menuButton || !menu) return;
+
+    menuButton.addEventListener("click", function () {
+        menu.classList.toggle("niazi-menu-open");
+    });
+
+    const menuLinks = menu.querySelectorAll("a");
+
+    menuLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            menu.classList.remove("niazi-menu-open");
+        });
+    });
+
+});
+    </script>
 </body>
 
 </html>
