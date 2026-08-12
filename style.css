@@ -2331,3 +2331,92 @@ font-size:28px;
         margin-top: 0 !important;
     }
 }
+/* FINAL MOBILE HEADER FIX */
+
+@media (max-width: 768px) {
+
+    header {
+        height: 72px !important;
+        min-height: 72px !important;
+        padding: 0 !important;
+    }
+
+    header .container {
+        width: 100% !important;
+        height: 72px !important;
+        min-height: 72px !important;
+
+        padding: 8px 14px !important;
+
+        display: flex !important;
+
+        /* THIS WAS MISSING */
+        flex-direction: row !important;
+
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        box-sizing: border-box !important;
+        gap: 10px !important;
+    }
+
+    header .logo {
+        flex: 1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: left !important;
+        min-width: 0 !important;
+    }
+
+    header .logo h2 {
+        margin: 0 !important;
+        font-size: 18px !important;
+        line-height: 1.1 !important;
+        white-space: nowrap !important;
+    }
+
+    header .logo p {
+        margin: 3px 0 0 !important;
+        font-size: 9px !important;
+        line-height: 1 !important;
+    }
+
+    .niazi-menu-btn {
+        display: flex !important;
+
+        flex: 0 0 44px !important;
+
+        width: 44px !important;
+        height: 44px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: #071b33 !important;
+        color: #ffffff !important;
+
+        border: none !important;
+        border-radius: 11px !important;
+
+        font-size: 24px !important;
+
+        position: relative !important;
+        z-index: 100002 !important;
+    }
+
+    #niazi-navigation {
+        top: 72px !important;
+        left: 12px !important;
+        right: 12px !important;
+
+        width: auto !important;
+    }
+
+    /* Hero immediately after header */
+    .niazi-premium-hero {
+        margin-top: 0 !important;
+    }
+}
