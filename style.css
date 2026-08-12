@@ -1667,10 +1667,293 @@ font-size:28px;
     }
 
     #niazi-navigation li:last-child a {
+      
         border-bottom: none !important;
     }
 
     #niazi-navigation li a:active {
         background: #f4f7fa !important;
     }
+}
+/* =========================================
+   NIAZI PREMIUM HERO
+========================================= */
+
+.niazi-premium-hero {
+    position: relative;
+    min-height: 620px;
+
+    background-image:
+        url("ambulance-hero.jpg");
+
+    background-size: cover;
+    background-position: center right;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Dark premium overlay */
+.niazi-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 18, 38, 0.94) 0%,
+            rgba(3, 18, 38, 0.78) 38%,
+            rgba(3, 18, 38, 0.18) 72%,
+            rgba(3, 18, 38, 0.05) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* Hero content */
+.niazi-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 70px 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* Left text */
+.niazi-hero-copy {
+    width: 52%;
+    max-width: 600px;
+}
+
+
+/* 24/7 */
+.niazi-247 {
+    display: inline-block;
+
+    background: #e00000;
+    color: #ffffff;
+
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 0.95;
+
+    padding: 8px 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+}
+
+
+/* Main heading */
+.niazi-hero-copy h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 58px;
+    line-height: 0.98;
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
+}
+
+
+/* Red heading part */
+.niazi-hero-copy h1 span {
+    display: block;
+
+    color: #e00000;
+
+    margin-top: 5px;
+}
+
+
+/* All Pakistan */
+.niazi-all-pakistan {
+    display: inline-block;
+
+    margin-top: 24px;
+
+    padding: 10px 20px;
+
+    background: #071b33;
+
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    letter-spacing: .8px;
+
+    border-left: 5px solid #e00000;
+}
+
+
+/* Description */
+.niazi-hero-description {
+    color: #ffffff;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 540px;
+
+    margin: 22px 0;
+}
+
+
+/* Services */
+.niazi-hero-services {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.niazi-hero-services span {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 14px;
+
+    background: rgba(255,255,255,.95);
+
+    color: #071b33;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .niazi-premium-hero {
+
+        min-height: auto;
+
+        background-position: 62% center;
+
+        align-items: flex-end;
+    }
+
+
+    .niazi-hero-overlay {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(3,18,38,.12) 0%,
+                rgba(3,18,38,.30) 30%,
+                rgba(3,18,38,.88) 70%,
+                rgba(3,18,38,.97) 100%
+            );
+    }
+
+
+    .niazi-hero-content {
+
+        padding: 270px 20px 35px;
+
+    }
+
+
+    .niazi-hero-copy {
+
+        width: 100%;
+
+        max-width: none;
+
+        text-align: left;
+    }
+
+
+    .niazi-247 {
+
+        font-size: 43px;
+
+        padding: 7px 15px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .niazi-hero-copy h1 {
+
+        font-size: 38px;
+
+        line-height: 1;
+
+        letter-spacing: -.5px;
+    }
+
+
+    .niazi-all-pakistan {
+
+        margin-top: 17px;
+
+        font-size: 15px;
+
+        padding: 9px 15px;
+    }
+
+
+    .niazi-hero-description {
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+        margin: 17px 0;
+    }
+
+
+    .niazi-hero-services {
+
+        gap: 7px;
+
+        margin-top: 12px;
+    }
+
+
+    .niazi-hero-services span {
+
+        font-size: 12px;
+
+        padding: 8px 10px;
+
+        border-radius: 7px;
+    }
+
 }
