@@ -125,5 +125,24 @@ const year=document.getElementById("year");
 if(year){
 
 year.innerHTML=new Date().getFullYear();
+/* =========================================
+   NIAZI MOBILE MENU
+========================================= */
 
+function toggleNiaziMenu() {
+
+    const menu = document.getElementById("niazi-navigation");
+
+    menu.classList.toggle("niazi-menu-open");
+
+}
+
+
+function closeNiaziMenu() {
+
+    const menu = document.getElementById("niazi-navigation");
+
+    menu.classList.remove("niazi-menu-open");
+
+}
 }
