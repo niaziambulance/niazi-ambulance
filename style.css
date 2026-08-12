@@ -1956,3 +1956,213 @@ font-size:28px;
     }
 
 }
+/* =========================================
+   FINAL MOBILE HEADER + HERO POLISH
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 100000 !important;
+    }
+
+    header .container {
+        width: 100% !important;
+        min-height: 64px !important;
+        height: 64px !important;
+        padding: 8px 14px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
+    }
+
+    header .logo {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    header .logo h2 {
+        font-size: 18px !important;
+        line-height: 1.05 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    header .logo p {
+        font-size: 9px !important;
+        line-height: 1.1 !important;
+        margin-top: 3px !important;
+        white-space: nowrap !important;
+    }
+
+    .niazi-menu-btn {
+        flex: 0 0 42px !important;
+        width: 42px !important;
+        height: 42px !important;
+
+        background: #071b33 !important;
+        color: #fff !important;
+
+        border: 0 !important;
+        border-radius: 11px !important;
+
+        font-size: 22px !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,.16) !important;
+    }
+
+    /* ---------- MOBILE DROPDOWN ---------- */
+
+    #niazi-navigation {
+        top: calc(100% + 6px) !important;
+        left: 10px !important;
+        right: 10px !important;
+
+        border-radius: 14px !important;
+        padding: 5px 0 !important;
+
+        box-shadow:
+            0 18px 40px rgba(0,0,0,.20) !important;
+
+        border: 1px solid #eeeeee !important;
+    }
+
+    #niazi-navigation li a {
+        padding: 13px 18px !important;
+
+        font-size: 15px !important;
+        font-weight: 700 !important;
+
+        text-align: left !important;
+
+        border-bottom: 1px solid #f0f0f0 !important;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .niazi-premium-hero {
+        min-height: 0 !important;
+
+        background-size: cover !important;
+
+        /* ambulance ko mobile par centre/right rakhein */
+        background-position: 68% center !important;
+
+        align-items: flex-end !important;
+    }
+
+    .niazi-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(3,18,38,.02) 0%,
+                rgba(3,18,38,.12) 32%,
+                rgba(3,18,38,.72) 67%,
+                rgba(3,18,38,.96) 100%
+            ) !important;
+    }
+
+    .niazi-hero-content {
+        width: 100% !important;
+
+        /* 270px ko reduce kiya */
+        padding: 205px 18px 28px !important;
+    }
+
+    .niazi-hero-copy {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        text-align: left !important;
+    }
+
+    .niazi-247 {
+        font-size: 40px !important;
+        padding: 6px 13px !important;
+
+        border-radius: 8px !important;
+
+        margin-bottom: 10px !important;
+    }
+
+    .niazi-hero-copy h1 {
+        font-size: 34px !important;
+        line-height: 1.02 !important;
+
+        letter-spacing: -.6px !important;
+    }
+
+    .niazi-hero-copy h1 span {
+        margin-top: 4px !important;
+    }
+
+    .niazi-all-pakistan {
+        margin-top: 14px !important;
+
+        font-size: 14px !important;
+
+        padding: 8px 14px !important;
+
+        border-left-width: 4px !important;
+
+        border-radius: 7px !important;
+    }
+
+    .niazi-hero-description {
+        font-size: 14px !important;
+
+        line-height: 1.45 !important;
+
+        margin: 14px 0 !important;
+
+        max-width: 100% !important;
+    }
+
+    .niazi-hero-services {
+        gap: 6px !important;
+        margin-top: 10px !important;
+    }
+
+    .niazi-hero-services span {
+        font-size: 11px !important;
+
+        padding: 7px 9px !important;
+
+        border-radius: 6px !important;
+
+        line-height: 1.2 !important;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 380px) {
+
+    header .logo h2 {
+        font-size: 16px !important;
+    }
+
+    .niazi-hero-content {
+        padding-top: 185px !important;
+    }
+
+    .niazi-247 {
+        font-size: 36px !important;
+    }
+
+    .niazi-hero-copy h1 {
+        font-size: 30px !important;
+    }
+
+    .niazi-hero-description {
+        font-size: 13px !important;
+    }
+}
