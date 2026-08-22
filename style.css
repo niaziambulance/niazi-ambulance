@@ -2420,3 +2420,14 @@ font-size:28px;
         margin-top: 0 !important;
     }
 }
+/* Navigation links */
+#niazi-navigation ul li a {
+    color: #222 !important;
+    text-decoration: none !important;
+}
+
+/* Navigation hover */
+#niazi-navigation ul li a:hover {
+    color: #d71920 !important;
+    text-decoration: none !important;
+}
